@@ -83,8 +83,8 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 | Built-in Wi-Fi Access Point SSID | SYSTEMCORE |
 | Built-in Wi-Fi Access Point Password | PASSWORD |
 | Systemcore Wi-Fi Access Point IP | 172.30.0.1 |
-| Systemcore USB IP (Windows) | 172.26.0.1 |
-| Systemcore USB IP (Linux, Mac) | 172.27.0.1 |
+| Systemcore USB IP (Windows) | 172.26.0.1 (28 for images 9 and before)|
+| Systemcore USB IP (Linux, Mac) | 172.27.0.1 (29 for images 9 and before)|
 | Systemcore Ethernet IP | Check display |
 | Default User | systemcore |
 | Default Password | systemcore |
