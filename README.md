@@ -93,7 +93,9 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ### Powering On
 
-Connect your Systemcore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
+For Beta units, the only way to power is through the MicroFit power. If using Motioncore, connect from the MicroFit to the Bridge port on Motioncore. If using Expansion Hubs or raw power, use the MicroFit to XT30 cable included in your kit (If you need raw wires, either cut of the XT30 or buy an XT30 extension cable off of Amazon and cut the wires off of that.)
+
+For Alpha units, connect your Systemcore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
 
 Do not use both power inputs (Bridge + Weidmuller) simultaneously.
 
@@ -127,19 +129,15 @@ Update to the latest stable Alpha release to get started.
 <details>
 <summary>Flashing OS Updates (Mac)</summary>
 
-1. Download [Balena Etcher](https://etcher.balena.io/).
-2. Spin-up RPIBoot:
-    ```
-    brew install libusb
-    brew install pkg-config
-    git clone --recurse-submodules --shallow-submodules --depth=1 https://github.com/raspberrypi/usbboot
-    cd usbboot
-    make
-    cd mass-storage-gadget64
-    sudo ../rpiboot -d .
-    ```
-3. Boot Systemcore into Flash Mode.
-4. Flash with Etcher.
+1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public) Make sure to grab the correct one for your hardware revision (alpha or beta).
+2. Make sure the latest Limelight Hardware Manager is installed (see Tooling above)
+3. Open Limelight Hardware Manager
+3. Navigate to the Flash OS Tab
+4. Boot Systemcore into Flash Mode (see 'Flash Mode' section above). You should see activity in the log window. If you don't see anything, click the 'reinstall drivers' button at .
+5. Select an OS .zip or .img to flash. Wait for extraction to complete.
+6. Refresh drives and select the one marked as Limelight/Systemcore.
+7. Click the “Flash” Button after it starts flashing.
+8. Once complete, remove USB and power from Systemcore
 
 </details>
 
