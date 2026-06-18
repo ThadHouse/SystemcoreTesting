@@ -83,8 +83,8 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 | Built-in Wi-Fi Access Point SSID | SYSTEMCORE |
 | Built-in Wi-Fi Access Point Password | PASSWORD |
 | Systemcore Wi-Fi Access Point IP | 172.30.0.1 |
-| Systemcore USB IP (Windows) | 172.28.0.1 |
-| Systemcore USB IP (Linux, Mac) | 172.29.0.1 |
+| Systemcore USB IP (Windows) | 172.26.0.1 |
+| Systemcore USB IP (Linux, Mac) | 172.27.0.1 |
 | Systemcore Ethernet IP | Check display |
 | Default User | systemcore |
 | Default Password | systemcore |
@@ -115,7 +115,7 @@ Update to the latest stable Alpha release to get started.
 3. Navigate to the Flash OS Tab
 4. Boot Systemcore into Flash Mode (see 'Flash Mode' section above). You should see activity in the log window. If you don't see anything, click the 'reinstall drivers' button at .
 5. Select an OS .zip or .img to flash. Wait for extraction to complete.
-6. Refresh drives and select the one marked as Limelight/Systemcore. 
+6. Refresh drives and select the one marked as Limelight/Systemcore.
 7. Click the “Flash” Button after it starts flashing.
 8. Once complete, remove USB and power from Systemcore
 
@@ -170,7 +170,7 @@ Update to the latest stable Alpha release to get started.
 
 1. Boot Systemcore normally.
 2. Connect via USB, Ethernet, or Wi-Fi
-3. Navigate to http://robot.local in a web browser. 
+3. Navigate to http://robot.local in a web browser.
 4. Configure your team number in the configuration tab, and click the red "Change Team Number" Button.
 
 ![](https://ik.imagekit.io/llimi/controlsystem/teamnumber.png)
@@ -188,7 +188,7 @@ Release 157 selects a default Wi-Fi channel. This is causing issues in some envi
 
 1. Boot and establish connectivity with your Systemcore.
 2. Ensure WPILIB 2027 has been installed.
-3. Open '2027_alpha5 WPILib VS Code' 
+3. Open '2027_alpha5 WPILib VS Code'
 4. Make a new WPILib project as you normally would, and make sure to set the correct team number during the project creation step.
 5. Deploy the project as you normally would.
 6. The NI DriverStation should reflect the presence of robot code.
@@ -208,7 +208,7 @@ See [RobotPy specific notes](robotpy.md)
 
 1. Download the Elastic and AdvantageScope IPK packages.
 2. Navigate to the web interface.
-3. Click the "Add Package" card. 
+3. Click the "Add Package" card.
 4. Install one package at a time.
 5. Click the new "Elastic" or "AdvantageScope Lite" launch cards.
 6. Use Elastic and AdvantageScope as you normally would. A quick way to add live telemetry to your robot is the use of the SmartDashboard API (subject to change soon) ```SmartDashboard.putNumber("key",value);```.
@@ -220,7 +220,7 @@ See [RobotPy specific notes](robotpy.md)
 
 1. [Download the CANivore IPK packages.](https://github.com/wpilibsuite/SystemCoreTesting/blob/main/CTR-Phoenix.md#download)
 2. Navigate to the web interface.
-3. Click the "Add Package" card. 
+3. Click the "Add Package" card.
 4. Install the usb-kernel package, and then install the usb package.
 5. Powercycle your Systemcore.
 
