@@ -93,11 +93,11 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ### Powering On
 
-For Beta units, the only way to power is through the MicroFit power. If using Motioncore, connect from the MicroFit to the Bridge port on Motioncore. If using Expansion Hubs or raw power, use the MicroFit to XT30 cable included in your kit (If you need raw wires, either cut of the XT30 or buy an XT30 extension cable off of Amazon and cut the wires off of that.)
+For Beta units, the only way to power is through the MicroFit Pwr/Bridge port. If using Motioncore, connect from the Pwr/Bridge port on Systemcore to the Bridge port on Motioncore using one of the provided Microfit cables. If using Expansion Hubs or raw power, use the MicroFit to XT30 cable included in your kit (If you need raw wires, either cut off the XT30 or buy an XT30 extension cable off of Amazon and cut the wires off of that.)
 
 For Alpha units, connect your Systemcore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
 
-Do not use both power inputs (Bridge + Weidmuller) simultaneously.
+Do not use both power inputs on Alpha units (Bridge + Weidmuller) simultaneously.
 
 ### Flash Mode
 
