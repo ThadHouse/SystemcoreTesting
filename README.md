@@ -60,6 +60,9 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 
 \* The NI Driver Station will continue to function with all currently released Systemcore images. Some newer Driver Station features (for example, OpMode selection and Alerts) are only available in the 2027 Driver Station and require Systemcore images >= 10 and WPILib >= v2027.0.0-alpha-5.
 
+> [!IMPORTANT]
+> If you plan to use Systemcore at an offseason event, check with the offseason event to see if the version of FMS they are using is compatible with the FIRST Driver Station or not. 
+
 #### Third Party Library Compatibility by WPILib Version
 
 | Library | WPILib v2027.0.0-alpha-2 | WPILib v2027.0.0-alpha-5/6 |
