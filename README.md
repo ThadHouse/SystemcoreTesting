@@ -107,13 +107,22 @@ For Beta units, the only way to power is through the MicroFit Pwr/Bridge port. I
 > [!CAUTION]
 > Do not use a regulator to power the device. It expects to receive battery voltage directly. Some regulators (such as the VRM) cannot provide enough power to the device under full load.
 
-### Flash Mode
+### Web Flashing
+
+If your Systemcore is running image 12 or later, you should flash your device using the web based update. To do this, follow these steps.
+
+1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public). Make sure to grab the correct one for your hardware revision (alpha or beta). Use the .llupdate file.
+2. Navigate to the web dashboard at http://robot.local/configure
+3. Scroll to the bottom. There will be a button to select the image to flash.
+4. Once selected, the system will give you the option of what to save during the update. We recommend keeping everything.
+
+### Flash Mode (Backup/Before Image 12)
 
 For Alpha units, if the USB-C port is attached before power is applied, Systemcore will boot into flash mode.
 
 For Beta units, hold down the Config button while powering the unit with USB connected to boot Systemcore into flash mode.
 
-### Flashing OS Updates
+### Flashing OS Updates (Backup/Before Image 12)
 Update to the latest stable release to get started.
 
 [Systemcore Flash Tutorial Video (60s)](https://player.vimeo.com/video/1095423117)
